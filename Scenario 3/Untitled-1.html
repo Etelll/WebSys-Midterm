@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Up Colors Like a Champ!</title>
+    <style>
+        body {
+            transition: background 0.3s, color 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <h2> Switch Up Colors Like a Champ!</h2>
+    <button id="lightBtn">Light Theme</button>
+    <button id="darkBtn">Dark Theme</button>
+
+    <script>
+        const lightBtn = document.getElementById("lightBtn");
+        const darkBtn = document.getElementById("darkBtn");
+
+        lightBtn.addEventListener("click", () => {
+            document.body.style.backgroundColor = "pink";
+            document.body.style.color = "black";
+        });
+
+        darkBtn.addEventListener("click", () => {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "pink";
+        });
+    </script>
+
+</body>
+</html>
