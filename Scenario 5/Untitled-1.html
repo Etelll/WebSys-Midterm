@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and Seekt</title>
+    <style>
+        
+        #collapsibleContent {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <button id="toggleButton">Show More</button>
+
+    
+    <div id="collapsibleContent">
+        <p>This is the hidden section congratulation.</p>
+    </div>
+
+    
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const collapsibleContent = document.getElementById('collapsibleContent');
+
+        toggleButton.addEventListener('click', function() {
+            if (collapsibleContent.style.display === 'none' || collapsibleContent.style.display === '') {
+                collapsibleContent.style.display = 'block';
+                toggleButton.textContent = 'Show Less';
+            } else {
+                collapsibleContent.style.display = 'none';
+                toggleButton.textContent = 'Show More';
+            }
+        });
+    </script>
+</body>
+</html>
